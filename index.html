@@ -67,10 +67,32 @@
       img {
         max-width: 100%;
       }
+
+      .intro-picture {
+        border-radius: 15px;
+        transition: all 150ms ease-in-out;
+        margin: 20px auto;
+      }
+
+      .intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
       .theme-button {
         background-color: #35013f;
         color: white;
         padding: 5 8px;
+      }
+
+      .gallery-pictures {
+        border-radius: 15px;
+        transition: all 150ms ease-in-out;
+        margin: 10px 10px;
+      }
+
+      .gallery-pictures:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
       }
 
       .theme-button:hover {
@@ -103,7 +125,8 @@
 
       <img
         src="https://images.unsplash.com/photo-1622648147611-e817249f3b73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=804&q=80"
-        width="450"
+        width="500"
+        class="intro-picture"
       />
 
       <p>
@@ -143,19 +166,23 @@
         <img
           src="https://images.unsplash.com/photo-1679847628912-4c3e7402abc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
           width="280"
+          class="gallery-pictures"
         />
         <img
           src="https://images.unsplash.com/photo-1648005539099-709d5be525fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=598&q=80"
           width="280"
+          class="gallery-pictures"
         />
         <img
           src="https://images.unsplash.com/photo-1662219708541-3a74d96330eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
           width="280"
+          class="gallery-pictures"
         />
 
         <img
           src="https://images.unsplash.com/photo-1679847069429-6511e0f137c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
           width="280"
+          class="gallery-pictures"
         />
       </div>
 
