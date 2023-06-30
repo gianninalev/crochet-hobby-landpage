@@ -5,12 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crochet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 7.4% 45.1%,
+          rgb(236, 206, 251) 0%,
+          rgb(205, 237, 246) 45.1%,
+          rgb(227, 251, 252) 78.4%,
+          rgb(230, 247, 235) 90%
+        );
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        text-align: center;
+        color: #35013f;
+      }
+
+      button {
+        display: block;
+        margin: 15px auto;
+        padding: 10px 15px;
+        border-radius: 6px;
+        border-style: none;
+        font-size: 16px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #cdedf6;
+        color: black;
+        cursor: pointer;
+      }
+
+      h1 {
+        font-family: "Lobster", cursive;
+        font-size: 65px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-family: "Lobster", cursive;
+        font-size: 25px;
+        font-weight: lighter;
+      }
+
+      .container {
+        max-width: 700px;
+        display: block;
+        text-align: center;
+        background-color: #dcd6f7;
+        padding: 50px;
+        margin: 20px auto;
+        border-radius: 22px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+      .theme-button {
+        background-color: #35013f;
+        color: white;
+        padding: 5 8px;
+      }
+
+      .theme-button:hover {
+        background-color: white;
+        color: #35013f;
+      }
+
+      ul {
+        list-style: none;
+        text-align: justify;
+      }
+
+      .benefits-list {
+        list-style: disc;
+        text-align: justify;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 15px;
+        margin: 20px;
+      }
+    </style>
   </head>
   <body>
-    <button>Dark Theme</button>
+    <button class="theme-button">Dark Theme</button>
     <div class="container">
-      <h1>CROCHET</h1>
+      <h1>Crochet</h1>
       <h2>Creativity for everyone</h2>
+
       <img
         src="https://images.unsplash.com/photo-1622648147611-e817249f3b73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=804&q=80"
         width="450"
@@ -23,24 +113,25 @@
         fun, creative way to spend your time, crochet may be the perfect
         activity for you!
       </p>
-
+      <hr />
       <h3>Why should I start doing crochet?</h3>
 
       <ul>
         <li>
-          <strong>You don't need a special talent to do it.</strong> Anyone can
-          do crochet: young children, old people, women, men with and without
-          disabilities.
+          🤍<strong>You don't need a special talent to do it.</strong>
+          Anyone can do crochet: young children, old people, women, men with and
+          without disabilities.
         </li>
         <li>
-          <strong>Not need of a special place to do it.</strong> You can do
+          🤍<strong>Not need of a special place to do it.</strong> You can do
           crochet everywhere! On the bus, at a cafe, on the beach. Name it!
           Everywhere.
         </li>
         <li>
-          <strong>Benefits.</strong> As a creative activity, It inpacts in a
+          🤍<strong>Benefits.</strong> As a creative activity, It inpacts in a
           postive way in your health. It can:
-          <ul>
+
+          <ul class="benefits-list">
             <li>Reduce stress and anxiety as well relieves depression</li>
             <li>Increase your productivity</li>
             <li>Lend itself to group social activities</li>
@@ -61,19 +152,24 @@
           src="https://images.unsplash.com/photo-1662219708541-3a74d96330eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
           width="280"
         />
+
+        <img
+          src="https://images.unsplash.com/photo-1679847069429-6511e0f137c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+          width="280"
+        />
       </div>
 
       <p>
         Find more patterns and tutorials
-        <a href="https://easycrochet.com/">here</a>
+        <a href="https://easycrochet.com/" target="_blank">here</a> 🧶✨
       </p>
       <button class="subscribe">Subscribe</button> for our weekly newsletter.
-      <footer>
-        💻 by
-        <a href="https://www.linkedin.com/in/gianninalevanoa/"
-          >Giannina Alne-Levano</a
-        >
-      </footer>
     </div>
+    <footer>
+      Open source code by
+      <a href="https://www.linkedin.com/in/gianninalevanoa/" target="_blank"
+        >Giannina Alne-Levano</a
+      >
+    </footer>
   </body>
 </html>
