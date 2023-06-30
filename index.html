@@ -84,15 +84,21 @@
         padding: 5 8px;
       }
 
-      .gallery-pictures {
-        border-radius: 15px;
+      .grid {
+        display: grid;
+        margin: 30px 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+      }
+      .grid img {
+        border-radius: 10px;
         transition: all 150ms ease-in-out;
-        margin: 10px 10px;
+        width: 100%;
       }
 
-      .gallery-pictures:hover {
+      .grid img:hover {
         filter: contrast(80%);
-        transform: scale(1.1);
+        transform: scale(1.8);
       }
 
       .theme-button:hover {
@@ -162,27 +168,19 @@
           </ul>
         </li>
       </ul>
-      <div class="gallery">
+      <div class="grid">
         <img
-          src="https://images.unsplash.com/photo-1679847628912-4c3e7402abc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
-          width="280"
-          class="gallery-pictures"
+          src="https://images.unsplash.com/photo-1620832400588-e8f89b5a5925?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
         />
         <img
-          src="https://images.unsplash.com/photo-1648005539099-709d5be525fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=598&q=80"
-          width="280"
-          class="gallery-pictures"
+          src="https://images.unsplash.com/photo-1610177498573-78deaa4a797b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
         />
         <img
           src="https://images.unsplash.com/photo-1662219708541-3a74d96330eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
-          width="280"
-          class="gallery-pictures"
         />
 
         <img
           src="https://images.unsplash.com/photo-1679847069429-6511e0f137c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
-          width="280"
-          class="gallery-pictures"
         />
       </div>
 
