@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster&family=Nunito&family=Urbanist&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -20,7 +20,7 @@
           rgb(227, 251, 252) 78.4%,
           rgb(230, 247, 235) 90%
         );
-        font-family: "Nunito", sans-serif;
+        font-family: "Urbanist", sans-serif;
         font-size: 18px;
         text-align: center;
         color: #35013f;
@@ -28,12 +28,13 @@
 
       button {
         display: block;
-        margin: 15px auto;
+        margin: 20px auto;
         padding: 10px 15px;
         border-radius: 6px;
         border-style: none;
         font-size: 16px;
         transition: all 200ms ease-in-out;
+        font-family: "Urbanist", sans-serif;
       }
 
       button:hover {
@@ -55,13 +56,14 @@
       }
 
       .container {
-        max-width: 700px;
+        max-width: 650px;
         display: block;
         text-align: center;
         background-color: #dcd6f7;
         padding: 50px;
         margin: 20px auto;
         border-radius: 22px;
+        line-height: 1.5;
       }
 
       img {
@@ -75,18 +77,22 @@
       }
 
       .intro-picture:hover {
-        filter: contrast(110%);
+        filter: contrast(80%);
         transform: scale(1.1);
       }
       .theme-button {
         background-color: #35013f;
         color: white;
         padding: 5 8px;
+        margin: 35px auto;
       }
 
+      hr {
+        margin: 30px 0px;
+      }
       .grid {
         display: grid;
-        margin: 30px 0;
+        margin: 40px auto;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 15px;
       }
@@ -97,7 +103,7 @@
       }
 
       .grid img:hover {
-        filter: contrast(110%);
+        filter: contrast(80%);
         transform: scale(1.4);
       }
 
@@ -120,6 +126,42 @@
         text-align: center;
         font-size: 15px;
         margin: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .dark {
+        background: linear-gradient(
+          180.2deg,
+          rgb(120, 85, 137) -6.9%,
+          rgb(35, 9, 31) 76.7%
+        );
+      }
+
+      .dark .theme-button {
+        background-color: white;
+        color: #35013f;
+      }
+
+      .dark .theme-button:hover {
+        background-color: #35013f;
+        color: white;
+      }
+
+      .dark .container {
+        color: #fcf9f4;
+        background-color: #35013f;
+      }
+
+      .dark footer {
+        color: #fcf9f4;
+      }
+
+      .dark a {
+        color: plum;
       }
     </style>
   </head>
@@ -161,7 +203,7 @@
           postive way in your health. It can:
 
           <ul class="benefits-list">
-            <li>Reduce stress and anxiety as well relieves depression.</li>
+            <li>Reduce stress and anxiety as relieves depression.</li>
             <li>Increase your productivity.</li>
             <li>Lend itself to group social activities.</li>
             <li>Build your self-esteem by being productive.</li>
@@ -188,7 +230,8 @@
         Find more patterns and tutorials
         <a href="https://easycrochet.com/" target="_blank">here</a> 🧶✨
       </p>
-      <button class="subscribe">Subscribe</button> for our weekly newsletter.
+      <button class="subscribe-button">Subscribe</button> for our weekly
+      newsletter.
     </div>
     <footer>
       Open source code by
@@ -196,5 +239,31 @@
         >Giannina Alne-Levano</a
       >
     </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      function subscribe() {
+        let email = prompt("What is your e-mail address?");
+        alert(
+          "Thank you! " +
+            "We hope you enjoy our special step-by-step tutorials for beginners every monday 🧶🤍✨."
+        );
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let subscribeButton = document.querySelector(".subscribe-button");
+      subscribeButton.addEventListener("click", subscribe);
+    </script>
   </body>
 </html>
