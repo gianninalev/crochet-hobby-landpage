@@ -1,0 +1,151 @@
+body {
+  background: radial-gradient(
+    circle at 7.4% 45.1%,
+    rgb(236, 206, 251) 0%,
+    rgb(205, 237, 246) 45.1%,
+    rgb(227, 251, 252) 78.4%,
+    rgb(230, 247, 235) 90%
+  );
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #35013f;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-style: none;
+  font-size: 16px;
+  transition: all 200ms ease-in-out;
+  font-family: "Urbanist", sans-serif;
+}
+
+button:hover {
+  background: #cdedf6;
+  color: black;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 65px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.container {
+  max-width: 650px;
+  display: block;
+  text-align: center;
+  background-color: #dcd6f7;
+  padding: 50px;
+  margin: 20px auto;
+  border-radius: 22px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.intro-picture {
+  border-radius: 15px;
+  transition: all 250ms ease-in-out;
+  margin: 20px auto;
+}
+
+.intro-picture:hover {
+  filter: contrast(80%);
+  transform: scale(1.1);
+}
+.theme-button {
+  background-color: #35013f;
+  color: white;
+  padding: 5 8px;
+  margin: 35px auto;
+}
+
+hr {
+  margin: 30px 0px;
+}
+.grid {
+  display: grid;
+  margin: 40px auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.grid img {
+  border-radius: 10px;
+  transition: all 250ms ease-in-out;
+  width: 100%;
+}
+
+.grid img:hover {
+  filter: contrast(80%);
+  transform: scale(1.4);
+}
+
+.theme-button:hover {
+  background-color: white;
+  color: #35013f;
+}
+
+ul {
+  list-style: none;
+  text-align: justify;
+}
+
+.benefits-list {
+  list-style: disc;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dark {
+  background: linear-gradient(
+    180.2deg,
+    rgb(120, 85, 137) -6.9%,
+    rgb(35, 9, 31) 76.7%
+  );
+}
+
+.dark .theme-button {
+  background-color: white;
+  color: #35013f;
+}
+
+.dark .theme-button:hover {
+  background-color: #35013f;
+  color: white;
+}
+
+.dark .container {
+  color: #fcf9f4;
+  background-color: #35013f;
+}
+
+.dark footer {
+  color: #fcf9f4;
+}
+
+.dark a {
+  color: plum;
+}
