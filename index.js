@@ -20,3 +20,4 @@ let themeButton = document.querySelector(".theme-button");
 themeButton.addEventListener("click", changeTheme);
 
 let subscribeButton = document.querySelector(".subscribe-button");
+subscribeButton.addEventListener("click", subscribe);
